@@ -84,6 +84,7 @@ nav ul {
 }
 #about {
   display: flex;
+  justify-content: center;
   text-align: center;
   padding: 0 50px;
   width: 100%;
@@ -100,11 +101,23 @@ nav ul {
   background-position: center left;
   background-repeat: no-repeat;
 }
+.about-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
 .about-content h2 {
   display: flex;
   justify-content: center;
   margin-left: auto;
-  margin: 9px;
+  margin-bottom: 20px;
   padding: 51px;
   line-height: 1.6;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.about-content p {
+  font-size: 17px;
+  margin: auto;
+  line-height: 1.8;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
