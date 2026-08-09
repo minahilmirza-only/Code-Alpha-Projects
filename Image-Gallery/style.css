@@ -110,7 +110,7 @@ nav ul {
   justify-content: center;
   margin-left: auto;
   margin-bottom: 20px;
-  padding: 51px;
+  padding: 40px;
   line-height: 1.6;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -120,4 +120,45 @@ nav ul {
   margin: auto;
   line-height: 1.8;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#gallery {
+  width: 100vw;
+  height: 100vh;
+}
+
+#gallery h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.gallery-container {
+  display: flex;
+  padding: 40px;
+  gap: 20px;
+}
+#contact {
+  width: 100vw;
+  height: 100vh;
+  background-image:
+    linear-gradient(
+      to right,
+      rgba(240, 248, 255, 0.95) 30%,
+      rgba(224, 242, 254, 0.55) 100%
+    ),
+    url("img.jpg");
+
+  background-size: cover;
+  background-position: center right;
+  background-repeat: no-repeat;
+  justify-content: center;
+  text-align: center;
+}
+#contact p {
+  font-size: large;
+  font-family:
+    "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
+    Arial, sans-serif;
 }
