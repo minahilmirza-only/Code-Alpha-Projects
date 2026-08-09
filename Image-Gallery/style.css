@@ -30,6 +30,7 @@ header {
   align-items: center;
   background-color: transparent;
   padding: 10px 50px;
+  background-color: #1e293b;
 }
 
 .logo img {
@@ -46,7 +47,7 @@ nav ul {
 
 .nav-links a {
   text-decoration: none;
-  color: #1e293b;
+  color: white;
   font-weight: bold;
   transition: color 0.3s ease;
   margin-left: 20px;
@@ -101,9 +102,9 @@ nav ul {
 }
 .about-content h2 {
   display: flex;
-  justify-content: right;
+  justify-content: center;
   margin-left: auto;
-  margin: -31px;
+  margin: 9px;
   padding: 51px;
   line-height: 1.6;
 }
