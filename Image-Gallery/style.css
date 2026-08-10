@@ -27,8 +27,11 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: transparent; /* Agar solid background chahiye toh #1e293b rakhein */
+  background-color: #f0f8ff;
   padding: 15px 50px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 .logo img {
@@ -135,6 +138,14 @@ nav ul {
   margin-bottom: 30px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+.gallery-container img {
+  width: 100%;
+  max-width: 300px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
 
 .gallery-container {
   display: flex;
@@ -176,7 +187,7 @@ nav ul {
 }
 
 #contact p {
-  line-height: 1.6px;
+  line-height: 1.6;
   font-size: 18px;
   font-family: "Trebuchet MS", sans-serif;
   margin-bottom: 20px;
