@@ -3,16 +3,16 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 /* Parent Container for Full-Page Background */
+
 .main-wrapper {
   width: 100%;
   min-height: 100vh;
-
   background-image:
     linear-gradient(
       to right,
       rgba(240, 248, 255, 0.95) 30%,
+
       rgba(224, 242, 254, 0.55) 100%
     ),
     url("img.jpg");
@@ -23,6 +23,7 @@
 }
 
 /* Header & Navbar */
+
 header {
   display: flex;
   justify-content: space-between;
@@ -58,6 +59,7 @@ nav ul {
 }
 
 /* Hero Section */
+
 #home {
   display: flex;
   align-items: center;
@@ -84,6 +86,7 @@ nav ul {
 }
 
 /* About Section */
+
 #about {
   display: flex;
   justify-content: center;
@@ -95,7 +98,9 @@ nav ul {
   background-image:
     linear-gradient(
       to left,
+
       rgba(240, 248, 255, 0.95) 30%,
+
       rgba(224, 242, 254, 0.55) 100%
     ),
     url("image.jpg");
@@ -126,6 +131,7 @@ nav ul {
 }
 
 /* Gallery Section */
+
 #gallery {
   width: 100%;
   min-height: 100vh;
@@ -138,6 +144,7 @@ nav ul {
   margin-bottom: 30px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
 .gallery-container img {
   width: 100%;
   max-width: 300px;
@@ -155,6 +162,7 @@ nav ul {
 }
 
 /* Contact Section */
+
 #contact {
   width: 100%;
   min-height: 100vh;
@@ -163,7 +171,9 @@ nav ul {
   background-image:
     linear-gradient(
       to right,
+
       rgba(240, 248, 255, 0.95) 30%,
+
       rgba(224, 242, 254, 0.55) 100%
     ),
     url("img.jpg");
@@ -171,14 +181,15 @@ nav ul {
   background-size: cover;
   background-position: center right;
   background-repeat: no-repeat;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
+
 /* Heading Style + Spacing */
+
 #contact h2 {
   font-size: 24px;
   color: #0f172a;
@@ -197,4 +208,31 @@ nav ul {
   font-size: 18px;
   display: block;
   margin-bottom: 10px;
+}
+#contact input[type="text"],
+#contact input[type="email"],
+#contact textarea {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px 14px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 16px;
+  outline: none;
+}
+
+#contact input[type="submit"] {
+  background-color: #0284c7;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#contact input[type="submit"]:hover {
+  background-color: #0369a1;
 }
