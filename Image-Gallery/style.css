@@ -167,8 +167,16 @@ nav ul {
   align-items: center;
   text-align: center;
 }
+/* Heading Style + Spacing */
+#contact h2 {
+  font-size: 24px;
+  color: #0f172a;
+  margin-bottom: 25px; /* Heading aur paragraph ke darmiyan space */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
 
 #contact p {
+  line-height: 1.6px;
   font-size: 18px;
   font-family: "Trebuchet MS", sans-serif;
   margin-bottom: 20px;
