@@ -52,13 +52,22 @@
 
     <section id="gallery">
       <h2>Gallery</h2>
-      <div class="gallery-container">
-        <img src="image1.jpg" alt="Image 1" width="300" />
-        <img src="image2.jpg" alt="Image 2" width="300" />
-        <img src="image3.jpg" alt="Image 3" width="300" />
-        <img src="image4.jpg" alt="Image 4" width="300" />
-        <img src="image5.jpg" alt="Image 5" width="300" />
-        <img src="image6.jpg" alt="Image 6" width="300" />
+      <div class="gallery-wrapper">
+        <!-- Prev Button -->
+        <button class="gallery-btn prev" onclick="changeSlide(-1)">
+          &#10094;
+        </button>
+        <div class="gallery-container">
+          <img src="image1.jpg" alt="Image 1" width="300" />
+          <img src="image2.jpg" alt="Image 2" width="300" />
+          <img src="image3.jpg" alt="Image 3" width="300" />
+          <img src="image4.jpg" alt="Image 4" width="300" />
+          <img src="image5.jpg" alt="Image 5" width="300" />
+          <img src="image6.jpg" alt="Image 6" width="300" />
+        </div>
+        <button class="gallery-btn next" onclick="changeSlide(1)">
+          &#10095;
+        </button>
       </div>
     </section>
 
@@ -98,5 +107,6 @@
         <input type="submit" value="Submit" />
       </form>
     </section>
+    <script src="script.js"></script>
   </body>
 </html>
