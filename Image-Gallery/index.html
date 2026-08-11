@@ -58,19 +58,28 @@
           &#10094;
         </button>
         <div class="gallery-container">
-          <img src="image1.jpg" alt="Image 1" width="300" />
-          <img src="image2.jpg" alt="Image 2" width="300" />
-          <img src="image3.jpg" alt="Image 3" width="300" />
-          <img src="image4.jpg" alt="Image 4" width="300" />
-          <img src="image5.jpg" alt="Image 5" width="300" />
-          <img src="image6.jpg" alt="Image 6" width="300" />
+          <img src="image1.jpg" alt="Image 1" onclick="openbox(0)" />
+          <img src="image2.jpg" alt="Image 2" onclick="openbox(1)" />
+          <img src="image3.jpg" alt="Image 3" onclick="openbox(2)" />
+          <img src="image4.jpg" alt="Image 4" onclick="openbox(3)" />
+          <img src="image5.jpg" alt="Image 5" onclick="openbox(4)" />
+          <img src="image6.jpg" alt="Image 6" onclick="openbox(5)" />
         </div>
+
         <button class="gallery-btn next" onclick="changeSlide(1)">
           &#10095;
         </button>
       </div>
     </section>
 
+    <!--popup Window-->
+    <div id="box" class="box">
+      <span class="closebutton" onclick="closebox()">&times;</span>
+      <button class="box-button prev-btn" onclick="changeboxSlide(-1)">&#10094;</button>
+      <img id="box-img" src=""  alt="fullsize">
+      <button class="box-button next-btn" onclick="changebox(1)">&#10095</button>
+      </div>
+      
     <section id="contact">
       <h2>Contact Us</h2>
       <p>
