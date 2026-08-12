@@ -1,30 +1,53 @@
-const galleryImags=document.querySelectorAll('.gallery-container img');
-const box=document.getElementById('#box');
-const boxImg=document.getElementById('box-img');
+// 1. Corrected Variable Names & Selection
+const galleryImages = document.querySelectorAll('.gallery-container img');
+const box = document.getElementById('box'); // '#' remove kar diya
+const boxImg = document.getElementById('box-img');
 
-let currentImgindex=0;
- 
-// functions calling
+let currentImgIndex = 0;
 
-function openbox(index){
-    currentImgindex=index;
-    boxImg.src=galleryImages[currentImgindex].src;
-    box.style.display='flex';
+// 2. Open Box Function
+function openbox(index) {
+  currentImgIndex = index;
+  boxImg.src = galleryImages[currentImgIndex].src;
+  box.style.display = 'flex';
 }
 
+// 3. Close Box Function
 function closebox() {
-    box.style.display='none';
+  box.style.display = 'none';
 }
 
-function changeboxslide(step){
-    currrentImgindex += step;
+// 4. Slide Change Function (If conditions inside the function)
+function changeboxSlide(step) {
+  currentImgIndex += step;
+
+  // Infinite Loop Logic
+  if (currentImgIndex >= galleryImages.length) {
+    currentImgIndex = 0;
+  }
+  if (currentImgIndex < 0) {
+    currentImgIndex = galleryImages.length - 1;
+  }
+
+  // Update Image Source
+  boxImg.src = galleryImages[currentImgIndex].src;
 }
 
-if(currentImgindex >= galleryImages.length){
-    currentImgindex=0;
+// Extra Alias: HTML ke changebox(1) buttons ke liye
+function changebox(step) {
+  changeboxSlide(step);
 }
-if(currentImgindex <0){
-    currentImgindex=galleryImageslength-1;
-}
-boxImg.src=galleryImages[currentImgindex].src;
 
+// 5. Keyboard Navigation
+document.addEventListener('keydown', function (e) {
+  // Sirf tab chalay jab popup open ho
+  if (box && box.style.display === 'flex') {
+    if (e.key === 'ArrowRight') {
+      changeboxSlide(1);
+    } else if (e.key === 'ArrowLeft') {
+      changeboxSlide(-1);
+    } else if (e.key === 'Escape') {
+      closebox();
+    }
+  }
+});
