@@ -26,4 +26,5 @@ if(currentImgindex >= galleryImages.length){
 if(currentImgindex <0){
     currentImgindex=galleryImageslength-1;
 }
+boxImg.src=galleryImages[currentImgindex].src;
 
