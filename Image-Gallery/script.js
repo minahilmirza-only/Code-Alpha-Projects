@@ -14,7 +14,16 @@ function openbox(index){
 
 function closebox() {
     box.style.display='none';
-
 }
 
+function changeboxslide(step){
+    currrentImgindex += step;
+}
+
+if(currentImgindex >= galleryImages.length){
+    currentImgindex=0;
+}
+if(currentImgindex <0){
+    currentImgindex=galleryImageslength-1;
+}
 
