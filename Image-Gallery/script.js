@@ -11,3 +11,10 @@ function openbox(index){
     boxImg.src=galleryImages[currentImgindex].src;
     box.style.display='flex';
 }
+
+function closebox() {
+    box.style.display='none';
+
+}
+
+
