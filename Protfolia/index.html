@@ -7,7 +7,7 @@
   </head>
   <body>
     <!-- Main Navigation -->
-    <header id="home">
+    <header>
       <div class="profile-name">Minahil Amjad</div>
 
       <nav class="topmenu">
@@ -105,6 +105,7 @@
         <div class="skill-card">
           <img
             src="https://api.iconify.design/lucide:sparkles.svg?color=%2338bdf8"
+            alt="prompt logo"
             width="50"
           />
           <p>Prompt-Engineering</p>
@@ -162,14 +163,68 @@
     </section>
 
     <!-- Contact Section -->
+    <!-- Contact Section -->
     <section id="contact">
-      <h2>Get In Touch</h2>
-      <p>Feel free to reach out for collaborations or project inquiries!</p>
-      <a href="minahilmirza9876@gmail.com">Email Me</a>
-    </section>
+      <div class="contact-box">
+        <h2>Get In Touch</h2>
+        <p>Have a question or want to work together? Send me a message!</p>
 
-    <footer>
-      <p>&copy; 2026 Minahil Amjad. All rights reserved.</p>
-    </footer>
+        <!-- Location Display Badge -->
+        <div class="location-badge">
+          <span class="location-icon">📍</span>
+          <span>Based in <strong>Gujrat, Pakistan</strong></span>
+        </div>
+
+        <!-- Interactive Form -->
+        <form id="contactForm">
+          <div class="input-field">
+            <label for="userName">Your Name</label>
+            <input
+              type="text"
+              id="userName"
+              placeholder="Enter your name"
+              required
+            />
+          </div>
+
+          <div class="input-field">
+            <label for="userEmail">Your Email</label>
+            <input
+              type="email"
+              id="userEmail"
+              placeholder="Enter your email"
+              required
+            />
+          </div>
+
+          <div class="input-field">
+            <label for="userMessage">Your Message</label>
+            <textarea
+              id="userMessage"
+              rows="4"
+              placeholder="Write your message here..."
+              required
+            ></textarea>
+          </div>
+
+          <button type="submit" class="submit-btn">Send Message 🚀</button>
+        </form>
+
+        <!-- Success Pop-up Message -->
+        <p id="successMessage" class="hidden-message">
+          Thank you! Your message has been sent successfully.
+        </p>
+
+        <!-- Direct Email Fallback -->
+        <div class="direct-contact">
+          <p>
+            Or email me directly at:
+            <a href="mailto:minahilmirza9876@gmail.com"
+              >minahilmirza9876@gmail.com</a
+            >
+          </p>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
