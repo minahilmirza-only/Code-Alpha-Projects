@@ -1,41 +1,44 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box; /* Ensures padding doesn't break width calculations */
+}
+
+body {
   background-color: black;
   color: white;
 }
+
 header {
-  background-color: navy;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #1a1a1a; /* Replaced bisque for dark mode contrast */
 }
 
 .profile-name {
-  padding: 10px;
-  float: left;
-  justify-content: space-between;
   font-size: 22px;
-  color: white;
   font-weight: bold;
+}
+section {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 60px 0;
+}
+
+.topmenu {
   display: flex;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  gap: 15px;
 }
 
 .topmenu a {
-  gap: 10px;
-  padding: 10px;
+  padding: 8px 12px;
   color: #a0aec0;
   text-decoration: none;
-  margin-left: 20px;
-  font-size: 18px;
-  transition: all 0.2s ease-in-out;
 }
-
-.topmenu a:hover,
-.topmenu:hover {
+.topmenu a:hover {
   color: white;
-  font-weight: bolder;
-}
-
-section {
-  width: 1000px;
-  height: 100%;
+  font-weight: bold;
 }
