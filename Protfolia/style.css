@@ -12,3 +12,18 @@
   font-weight: bold;
   font-family: Georgia, "Times New Roman", Times, serif;
 }
+
+.topmenu a {
+  color: #a0aec0;
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 18px;
+  display: flex;
+  justify-content: end;
+  transition: all 0.2s ease-in-out;
+}
+.topmenu a:hover,
+.topmenu:hover {
+  color: white;
+  font-weight: bolder;
+}
