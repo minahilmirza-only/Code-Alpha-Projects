@@ -14,13 +14,14 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 15px 30px;
-  background-color: #1a1a1a; /* Replaced bisque for dark mode contrast */
+  background-color: #1a1a1a;
 }
 
 .profile-name {
   font-size: 22px;
   font-weight: bold;
 }
+
 section {
   width: 90%;
   max-width: 1000px;
