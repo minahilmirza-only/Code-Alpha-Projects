@@ -5,10 +5,10 @@
 }
 
 .profile-name {
-  display: flex;
-  margin: 25px 0px;
-  justify-content: left;
+  padding: 10px;
+  float: left;
   font-size: 22px;
   color: white;
+  font-weight: bold;
   font-family: Georgia, "Times New Roman", Times, serif;
 }
