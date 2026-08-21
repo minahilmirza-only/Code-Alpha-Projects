@@ -49,18 +49,17 @@ section {
 /* Home Section Layout */
 #home {
   display: flex;
-  align-items: center; /* Text aur image ko vertically center align karega */
-  justify-content: space-between; /* Left par text aur right par image push karega */
-  gap: 40px; /* Dono ke beech clean spacing */
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
   width: 90%;
   max-width: 1100px;
   margin: 0 auto;
   padding: 60px 0;
 }
 
-/* Left Box (Text Area) */
 .home-text {
-  flex: 1; /* Bachi hui jagah space absorb kar lega */
+  flex: 1;
 }
 
 .home-text h1 {
@@ -79,21 +78,20 @@ section {
 }
 
 .home-links a {
-  color: #8b5cf6; /* Link purple color */
+  color: #5c7df6;
   text-decoration: none;
   margin-right: 15px;
   font-weight: bold;
 }
 
-/* Right Box (Image Area) */
 .Myimage {
-  width: 380px; /* Perfect display size */
-  flex-shrink: 0; /* Image ko squeeze hone se rokega */
+  width: 380px;
+  flex-shrink: 0;
 }
 
 .Myimage img {
   width: 100%;
   height: auto;
   display: block;
-  border-radius: 12px; /* Optional clean rounded borders */
+  border-radius: 12px;
 }
