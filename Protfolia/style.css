@@ -43,3 +43,7 @@ section {
   color: white;
   font-weight: bold;
 }
+#home p,
+h1 {
+  text-align: center;
+}
