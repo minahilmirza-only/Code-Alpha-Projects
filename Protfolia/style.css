@@ -15,6 +15,9 @@ header {
   align-items: center;
   padding: 15px 30px;
   background-color: #1a1a1a;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 .profile-name {
@@ -42,8 +45,4 @@ section {
 .topmenu a:hover {
   color: white;
   font-weight: bold;
-}
-#home p,
-h1 {
-  text-align: center;
 }
