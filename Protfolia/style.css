@@ -84,6 +84,13 @@ section {
   font-weight: bold;
 }
 
+.home-links button {
+  padding: 10px 20px;
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+}
+
 .Myimage {
   width: 380px;
   flex-shrink: 0;
