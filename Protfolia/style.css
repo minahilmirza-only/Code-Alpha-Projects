@@ -105,22 +105,3 @@ section {
 #about {
   width: 90%;
 }
-#about h2 {
-  text-align: center;
-  margin: 12px 0px;
-}
-.paragraph {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
-.about-img {
-  width: 380px;
-  flex-shrink: 0;
-}
-.about-img img {
-  width: 100%;
-  height: auto;
-  display: block;
-  border-radius: 12px;
-}
