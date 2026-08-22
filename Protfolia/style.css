@@ -107,7 +107,6 @@ section {
   margin-bottom: 25px;
   text-align: center;
   font-size: 32px;
-  margin: 12px;
 }
 
 .about-content {
@@ -117,7 +116,7 @@ section {
 }
 
 .about-content img {
-  width: 250px;
+  width: 260px;
   height: auto;
   border-radius: 12px;
   flex-shrink: 0;
@@ -125,6 +124,9 @@ section {
 
 .about-content p {
   font-size: 16px;
-  line-height: 1.6;
+  line-height: 1.7;
   color: #dddddd;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
