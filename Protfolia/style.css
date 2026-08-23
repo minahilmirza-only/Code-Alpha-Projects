@@ -171,3 +171,34 @@ section {
   font-weight: bold;
   color: #e2e8f0;
 }
+#projects {
+  width: 90%;
+  max-width: 1000px;
+  padding: 60px 0;
+  margin: 0 auto;
+}
+#projects h2 {
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 32px;
+}
+.project-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.project-card {
+  background-color: #1a1a1a;
+  border: 1px solid #333333;
+  border-radius: 29px;
+  padding: 20px 10px;
+  text-align: center;
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease;
+}
+.project-card:hover {
+  transform: translateY(-5px);
+  border-color: #38bdf8;
+}
