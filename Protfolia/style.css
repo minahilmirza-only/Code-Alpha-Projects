@@ -237,3 +237,7 @@ section {
   color: white;
   font-size: 18px;
 }
+#contactForm {
+  display: block;
+  gap: 10px;
+}
