@@ -233,3 +233,7 @@ section {
   color: #a1a1aa;
   margin-bottom: 20px;
 }
+.location-badge p {
+  color: white;
+  font-size: 18px;
+}
