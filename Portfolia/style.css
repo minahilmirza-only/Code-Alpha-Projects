@@ -239,10 +239,17 @@ section {
 }
 #contactForm {
   display: block;
-  gap: 10px;
 }
 .input-field {
   font-size: 17px;
   font-weight: bold;
   color: white;
+}
+#contactForm button {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 17px;
+  font-weight: bold;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
