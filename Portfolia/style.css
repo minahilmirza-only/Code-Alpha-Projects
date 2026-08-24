@@ -258,7 +258,7 @@ section {
 #contactForm {
   display: flex;
   flex-direction: column;
-  gap: 18px;
+  gap: 14px;
   text-align: left;
 }
 
@@ -277,7 +277,8 @@ section {
 .input-field input,
 .input-field textarea {
   width: 100%;
-  padding: 9px 12px;
+  padding: 10px 14px;
+  line-height: 1.4;
   background-color: #18181b;
   border: 1px solid #3f3f46;
   border-radius: 8px;
@@ -303,13 +304,13 @@ section {
   color: #09090b;
   font-size: 16px;
   font-weight: bold;
-  padding: 12px 24px;
+  padding: 10px 22px;
   border: none;
   border-radius: 8px;
   cursor: pointer;
   margin-top: 10px;
   align-self: center;
-  width: 100%;
+  width: fit-content;
   transition:
     background-color 0.2s ease,
     transform 0.1s ease;
@@ -330,11 +331,13 @@ section {
 
 /* Direct Contact Footer Link */
 .direct-contact {
-  margin-top: 30px;
-  padding-top: 20px;
+  margin-top: 24px;
+  padding-top: 16px;
   border-top: 1px solid #262626;
-  font-size: 14px;
+  font-size: 13px;
   color: #a1a1aa;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .direct-contact p {
@@ -345,6 +348,9 @@ section {
   color: #38bdf8;
   text-decoration: none;
   font-weight: 600;
+  display: inline-block;
+  max-width: 100%;
+  word-break: break-all;
 }
 
 .direct-contact a:hover {
