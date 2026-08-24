@@ -241,3 +241,8 @@ section {
   display: block;
   gap: 10px;
 }
+.input-field {
+  font-size: 17px;
+  font-weight: bold;
+  color: white;
+}
