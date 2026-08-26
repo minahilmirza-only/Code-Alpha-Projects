@@ -4,6 +4,18 @@
   box-sizing: border-box; /* Ensures padding doesn't break width calculations */
 }
 
+body,
+section,
+#home,
+#about,
+#skills,
+#projects,
+#contact {
+  height: 1000%;
+  min-height: fit-content;
+  overflow: visible;
+}
+
 body {
   background-color: black;
   color: white;
@@ -30,6 +42,7 @@ section {
   max-width: 1000px;
   margin: 0 auto;
   padding: 60px 0;
+  height: auto;
 }
 
 .topmenu {
@@ -177,42 +190,63 @@ section {
   max-width: 550px;
   margin: 0 auto;
   padding: 40px 0 20px 0;
+  margin-top: 60px;
 }
 #projects h2 {
   margin-bottom: 10px;
   text-align: center;
   font-size: 32px;
+  padding: 20px;
 }
 .project-container {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
-  margin-top: 30px;
+  flex-wrap: wrap; /* Fix: Flex wrap responsive layout align karega */
   gap: 20px;
 }
 
 .project-card {
-  flex: 1;
-  min-width: 260px;
-  max-width: 320px;
   background-color: #1a1a1a;
   border: 1px solid #333333;
-  border-radius: 20px;
-  padding: 24x 18px;
+  border-radius: 16px;
+  padding: 25px 20px;
   text-align: center;
+  flex: 1;
+  min-width: 250px;
+  max-width: 300px;
   transition:
     transform 0.2s ease,
     border-color 0.2s ease;
 }
+
 .project-card:hover {
   transform: translateY(-5px);
   border-color: #38bdf8;
 }
 
+.project-card h3 {
+  font-size: 20px;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
 .project-card p {
   font-size: 14px;
+  color: #a0aec0;
+  line-height: 1.5;
+  margin-bottom: 15px;
+  font-weight: normal; /* Paragraph ko light formatting di hai */
+}
+
+.project-card a {
+  color: #38bdf8;
+  text-decoration: none;
   font-weight: bold;
-  color: #e2e8f0;
+  font-size: 14px;
+}
+
+.project-card a:hover {
+  text-decoration: underline;
 }
 
 #contact {
@@ -352,32 +386,4 @@ section {
   color: #4ade80;
   font-size: 14px;
   margin-top: 15px;
-}
-
-/* Direct Contact Footer Link */
-.direct-contact {
-  margin-top: 24px;
-  padding-top: 16px;
-  border-top: 1px solid #262626;
-  font-size: 13px;
-  color: #a1a1aa;
-  word-wrap: break-word;
-  overflow-wrap: break-word;
-}
-
-.direct-contact p {
-  margin-bottom: 0;
-}
-
-.direct-contact a {
-  color: #38bdf8;
-  text-decoration: none;
-  font-weight: 600;
-  display: inline-block;
-  max-width: 100%;
-  word-break: break-all;
-}
-
-.direct-contact a:hover {
-  text-decoration: underline;
 }
