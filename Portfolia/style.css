@@ -136,6 +136,7 @@ section {
   max-width: 1000px;
   margin: 0 auto;
   padding: 60px 0;
+  height: 100%;
 }
 
 #skills h2 {
@@ -173,9 +174,9 @@ section {
 }
 #projects {
   width: 90%;
-  max-width: 1000px;
-  padding: 60px 0;
+  max-width: 550px;
   margin: 0 auto;
+  padding: 40px 0 20px 0;
 }
 #projects h2 {
   margin-bottom: 10px;
@@ -185,14 +186,19 @@ section {
 .project-container {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
   gap: 20px;
 }
 
 .project-card {
+  flex: 1;
+  min-width: 260px;
+  max-width: 320px;
   background-color: #1a1a1a;
   border: 1px solid #333333;
-  border-radius: 29px;
-  padding: 20px 10px;
+  border-radius: 20px;
+  padding: 24x 18px;
   text-align: center;
   transition:
     transform 0.2s ease,
@@ -212,8 +218,8 @@ section {
 #contact {
   width: 90%;
   max-width: 550px;
-  margin: 0 auto;
-  padding: 80px 0;
+  margin: 0 auto 50px auto;
+  padding: 20px 0 40px 0;
 }
 
 .contact-box {
@@ -260,7 +266,7 @@ section {
 #contactForm {
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 12px;
   text-align: left;
   margin-bottom: 20px;
 }
@@ -277,8 +283,7 @@ section {
   color: #ffffff;
 }
 
-.input-field input,
-.input-field textarea {
+.input-field input {
   width: 100%;
   padding: 10px 14px;
   line-height: 1.4;
@@ -294,7 +299,24 @@ section {
     border-color 0.2s ease,
     box-shadow 0.2s ease;
 }
-
+.input-field textarea {
+  width: 100%;
+  height: 85px; /* Compact vertical height */
+  padding: 10px 14px;
+  line-height: 1.4;
+  background-color: #18181b;
+  border: 1px solid #3f3f46;
+  border-radius: 8px;
+  color: #ffffff;
+  font-size: 14px;
+  font-family: inherit;
+  outline: none;
+  box-sizing: border-box;
+  resize: none; /* User drag resize disable karega */
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
 .input-field input:focus,
 .input-field textarea:focus {
   border-color: #38bdf8;
